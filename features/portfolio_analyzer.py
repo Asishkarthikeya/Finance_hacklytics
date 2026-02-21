@@ -36,6 +36,7 @@ COLUMN_ALIASES = {
                  "average_price", "purchase_price", "cost_per_share", "buy_average"],
     "current_price": ["current_price", "market_price", "price", "last_price",
                       "current_value_per_share", "mark"],
+    "description": ["description", "action", "activity", "type", "transaction", "details"]
 }
 
 
@@ -68,12 +69,23 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame | None:
         return None
 
     df = df.rename(columns=mapping)
+    
+    # Flag to check if this is an activity log (has tickers/instruments but no shares)
+    is_activity_log = "shares" not in df.columns
+
     # Keep only mapped + extra columns
-    available = [c for c in ["ticker", "shares", "avg_cost", "current_price"] if c in df.columns]
+    available = [c for c in ["ticker", "shares", "avg_cost", "current_price", "description"] if c in df.columns]
     if len(available) < 2:
         return None
         
     df = df[available].copy()
+    
+    if is_activity_log:
+        df["shares"] = 1.0 # Default to 1 so the analyzer can still fetch prices and analyze the asset
+        if "avg_cost" not in df.columns:
+            df["avg_cost"] = 0.0
+        # Drop duplicate transactions so we just get a unique list of assets traded
+        df = df.drop_duplicates(subset=["ticker"]).copy()
     
     # Ensure numeric columns are forced to float to prevent missing data errors
     for col in ["shares", "avg_cost", "current_price"]:
@@ -84,6 +96,10 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame | None:
     if "shares" in df.columns:
         df = df[df["shares"] > 0]
         
+    # Cleanup empty tickers which might be generated from summary rows
+    df = df[df["ticker"].notna()]
+    df = df[df["ticker"].astype(str).str.strip() != ""]
+        
     if df.empty:
         return None
         
@@ -92,6 +108,9 @@ def _normalize_columns(df: pd.DataFrame) -> pd.DataFrame | None:
 
 def _find_header_and_normalize(df: pd.DataFrame) -> pd.DataFrame | None:
     """Find the actual table header (skipping metadata rows at top) and normalize."""
+    import streamlit as st
+    st.write("DEBUG: Raw DataFrame Head:", df.head())
+    
     target_keywords = set()
     for aliases in COLUMN_ALIASES.values():
         target_keywords.update(aliases)
@@ -123,7 +142,10 @@ def _find_header_and_normalize(df: pd.DataFrame) -> pd.DataFrame | None:
 def _parse_csv(uploaded_file) -> pd.DataFrame | None:
     """Parse uploaded CSV and normalize columns, skipping metadata at top."""
     try:
-        df = pd.read_csv(uploaded_file, header=None)
+        content = uploaded_file.getvalue()
+        with open("debug_raw_file.csv", "wb") as f:
+            f.write(content)
+        df = pd.read_csv(io.BytesIO(content), header=None)
         return _find_header_and_normalize(df)
     except Exception as e:
         logger.error(f"CSV parse error: {e}")
@@ -133,7 +155,10 @@ def _parse_csv(uploaded_file) -> pd.DataFrame | None:
 def _parse_excel(uploaded_file) -> pd.DataFrame | None:
     """Parse uploaded Excel and normalize columns, skipping metadata at top."""
     try:
-        df = pd.read_excel(uploaded_file, header=None)
+        content = uploaded_file.getvalue()
+        with open("debug_raw_file.xlsx", "wb") as f:
+            f.write(content)
+        df = pd.read_excel(io.BytesIO(content), header=None)
         return _find_header_and_normalize(df)
     except Exception as e:
         logger.error(f"Excel parse error: {e}")
@@ -390,10 +415,12 @@ def render_portfolio_analyzer():
         if holdings is None or holdings.empty:
             st.warning("⚠️ Could not parse holdings from this file. "
                        "Please ensure your CSV has columns like: ticker/symbol, shares/quantity, avg_cost/cost_basis.")
-            st.info("**Supported column names:** ticker, symbol, shares, quantity, avg_cost, cost_basis, current_price")
+            st.info("**Supported column names:** ticker, symbol, shares, quantity, avg_cost, cost_basis, current_price, instrument, description")
+            st.write("DEBUG: I tried to parse it but `holdings` returned empty. Is Streamlit running the latest code?")
             return
 
         st.success(f"✅ Parsed {len(holdings)} holdings from **{uploaded.name}**")
+        st.write("DEBUG: Successfully parsed holdings DataFrame:", holdings)
 
         with st.status("📊 Analyzing portfolio...", expanded=True) as status:
             status.write("💰 Fetching current prices...")
