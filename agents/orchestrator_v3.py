@@ -11,8 +11,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from agents.tool_calling_agents import WebResearchAgent, MarketDataAgent, InternalPortfolioAgent
 from agents.data_analysis_agent import DataAnalysisAgent
-
-from langchain_google_genai import ChatGoogleGenerativeAI
+from features.utils import call_gemini
 
 # --- Configuration ---
 load_dotenv()
@@ -44,17 +43,10 @@ def get_orchestrator(llm_provider="gemini", api_key=None):
     Factory function to create the orchestrator graph with a specific LLM.
     """
     
-    # 1. Initialize LLM (Gemini Only)
-    if not api_key:
-        api_key = os.getenv("GOOGLE_API_KEY")
-    if not api_key:
-        raise ValueError("Google Gemini API Key is missing.")
-    llm = ChatGoogleGenerativeAI(model="gemini-flash-lite-latest", google_api_key=api_key, temperature=0, max_retries=5)
+    # 2. Initialize Data Analyzer (Now uses global call_gemini fallback)
+    data_analyzer = DataAnalysisAgent()
 
-    # 2. Initialize Data Analyzer with the chosen LLM
-    data_analyzer = DataAnalysisAgent(llm=llm)
-
-    # 3. Define Nodes (Closure captures 'llm' and 'data_analyzer')
+    # 3. Define Nodes
 
     # 3. Define Nodes (Closure captures 'llm' and 'data_analyzer')
 
@@ -98,7 +90,7 @@ def get_orchestrator(llm_provider="gemini", api_key=None):
         
         CRITICAL: Default to null for time_range if not explicitly mentioned!
         """
-        raw_response = llm.invoke(prompt).content.strip()
+        raw_response = call_gemini(prompt).strip()
         
         symbol = None
         scan_intent = None
@@ -326,7 +318,7 @@ def get_orchestrator(llm_provider="gemini", api_key=None):
             2. Results Table: Create a markdown table with columns: Symbol | Price | % Change.
             3. Conclusion: Highlight the most significant movers.
             """
-            final_report = llm.invoke(report_prompt).content
+            final_report = call_gemini(report_prompt)
             return {"final_report": final_report}
 
         analysis_insights = state.get("analysis_results", {}).get("insights", "Not available.")
@@ -461,7 +453,7 @@ Quarterly Revenue Growth: {overview_data.get('QuarterlyRevenueGrowthYOY', 'N/A')
         - Use tables for structured data
         - Be concise but comprehensive
         """
-        final_report = llm.invoke(report_prompt).content
+        final_report = call_gemini(report_prompt)
         return {"final_report": final_report}
 
     # 4. Build the Graph

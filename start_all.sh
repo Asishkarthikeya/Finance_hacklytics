@@ -12,7 +12,7 @@ trap cleanup SIGINT
 
 # Cleanup existing processes to prevent port conflicts
 echo "🧹 Cleaning up existing processes..."
-lsof -ti:8000,8001,8002,8003,8501 | xargs kill -9 2>/dev/null || true
+lsof -ti:8000,8001,8002,8003,7860 | xargs kill -9 2>/dev/null || true
 pkill -f "uvicorn" || true
 pkill -f "streamlit" || true
 sleep 2
@@ -49,4 +49,4 @@ sleep 3
 
 # Start Streamlit App
 echo "🛡️  Launching Sentinel Interface..."
-streamlit run app.py > streamlit.log 2>&1
+streamlit run app.py --server.port 7860 > streamlit.log 2>&1

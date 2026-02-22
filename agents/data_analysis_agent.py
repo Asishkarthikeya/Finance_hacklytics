@@ -7,7 +7,7 @@ import re
 from typing import TypedDict, Dict, Any, List
 
 from langgraph.graph import StateGraph, END
-from langchain_google_genai import ChatGoogleGenerativeAI
+from features.utils import call_gemini
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -20,8 +20,7 @@ class AnalysisState(TypedDict):
     charts: List[Any]
 
 class DataAnalysisAgent:
-    def __init__(self, llm: ChatGoogleGenerativeAI):
-        self.llm = llm
+    def __init__(self):
         self.workflow = self._create_workflow()
 
     def _create_workflow(self):
@@ -89,7 +88,7 @@ class DataAnalysisAgent:
             ]
         }}
         """
-        response_str = self.llm.invoke(prompt).content
+        response_str = call_gemini(prompt)
         logger.info(f"   LLM raw output for insights & viz plan:\n{response_str}")
 
         try:

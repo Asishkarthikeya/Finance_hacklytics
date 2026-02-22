@@ -396,7 +396,7 @@ def generate_report(ticker: str) -> dict:
 # Streamlit page renderer
 # ---------------------------------------------------------------------------
 def render_research_report():
-    st.markdown("## 📄 AI-Generated Research Report")
+    st.markdown("## 🌳💰 AI-Generated Research Report")
     st.caption("Generate a comprehensive, multi-agent investment research report for any stock. "
                "Powered by SEC EDGAR, Tavily news search, Alpha Vantage, and Google Gemini.")
 
@@ -433,44 +433,23 @@ def render_research_report():
     report = st.session_state.get("rr_report")
     if report:
         ticker_display = st.session_state.get("rr_display_ticker", "")
-        st.markdown(f"### 📊 Research Report: **{ticker_display}**")
+        st.markdown(f"### 🌳💰 Research Report: **{ticker_display}**")
         st.info(report.get("executive_summary", ""))
 
-        st.markdown(f"""
-        <div class="report-section">
-            <h4>📋 Business Overview & Financial Health</h4>
-            <div class="alert-body">
-                {report.get('fundamentals', 'No data available.')}
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.subheader("📋 Business Overview & Financial Health")
+        st.markdown(report.get('fundamentals', 'No data available.'))
+        st.markdown("---")
 
-        st.markdown(f"""
-        <div class="report-section">
-            <h4>📰 Recent News & Sentiment</h4>
-            <div class="alert-body">
-                {report.get('news', 'No data available.')}
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.subheader("📰 Recent News & Sentiment")
+        st.markdown(report.get('news', 'No data available.'))
+        st.markdown("---")
 
-        st.markdown(f"""
-        <div class="report-section" style="border-left: 3px solid #f59e0b;">
-            <h4 style="color: #f59e0b;">⚠️ Risk Factors</h4>
-            <div class="alert-body" style="color: #d4d4d8;">
-                {report.get('risks', 'No data available.')}
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.subheader("⚠️ Risk Factors")
+        st.markdown(report.get('risks', 'No data available.'))
+        st.markdown("---")
 
-        st.markdown(f"""
-        <div class="report-section" style="border-left: 3px solid #10b981; margin-bottom: 2rem;">
-            <h4 style="color: #10b981;">🎯 Analyst Verdict & Price Target</h4>
-            <div class="alert-body" style="font-size: 1.05rem;">
-                {report.get('verdict', 'No data available.')}
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.subheader("🎯 Analyst Verdict & Price Target")
+        st.markdown(report.get('verdict', 'No data available.'))
 
         # PDF Download
         st.markdown("---")

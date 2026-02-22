@@ -1,5 +1,401 @@
 [
   {
+    "timestamp": "2026-02-21T21:21:54.160124",
+    "type": "MARKET",
+    "symbol": "AMZN",
+    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +0.54% to $150.47",
+    "details": {
+      "price": 150.47,
+      "change": 0.54,
+      "timestamp": "2026-02-21T21:21:54.159998",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:21:53.501172",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.49% to $413.84",
+    "details": {
+      "price": 413.84,
+      "change": -1.49,
+      "timestamp": "2026-02-21T21:21:53.500549",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:21:52.908563",
+    "type": "MARKET",
+    "symbol": "NVDA",
+    "message": "\ud83d\udcc8 UP ALERT: NVDA moved +0.96% to $878.64",
+    "details": {
+      "price": 878.64,
+      "change": 0.96,
+      "timestamp": "2026-02-21T21:21:52.908450",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:21:52.586166",
+    "type": "MARKET",
+    "symbol": "TSLA",
+    "message": "\ud83d\udcc9 DOWN ALERT: TSLA moved -1.96% to $175.62",
+    "details": {
+      "price": 175.62,
+      "change": -1.96,
+      "timestamp": "2026-02-21T21:21:52.585990",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:16:51.996708",
+    "type": "MARKET",
+    "symbol": "GOOGL",
+    "message": "\ud83d\udcc9 DOWN ALERT: GOOGL moved -1.82% to $149.34",
+    "details": {
+      "price": 149.34,
+      "change": -1.82,
+      "timestamp": "2026-02-21T21:16:51.996594",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:16:51.657813",
+    "type": "MARKET",
+    "symbol": "AMZN",
+    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +1.02% to $148.34",
+    "details": {
+      "price": 148.34,
+      "change": 1.02,
+      "timestamp": "2026-02-21T21:16:51.657683",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:16:51.378746",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc8 UP ALERT: MSFT moved +1.96% to $406.39",
+    "details": {
+      "price": 406.39,
+      "change": 1.96,
+      "timestamp": "2026-02-21T21:16:51.378612",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:16:51.112521",
+    "type": "MARKET",
+    "symbol": "NVDA",
+    "message": "\ud83d\udcc8 UP ALERT: NVDA moved +1.25% to $882.84",
+    "details": {
+      "price": 882.84,
+      "change": 1.25,
+      "timestamp": "2026-02-21T21:16:51.112464",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:16:50.579277",
+    "type": "MARKET",
+    "symbol": "AAPL",
+    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +1.31% to $172.44",
+    "details": {
+      "price": 172.44,
+      "change": 1.31,
+      "timestamp": "2026-02-21T21:16:50.579211",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:11:49.296695",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.05% to $408.81",
+    "details": {
+      "price": 408.81,
+      "change": -1.05,
+      "timestamp": "2026-02-21T21:11:49.296596",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:11:49.013669",
+    "type": "MARKET",
+    "symbol": "NVDA",
+    "message": "\ud83d\udcc9 DOWN ALERT: NVDA moved -0.79% to $888.30",
+    "details": {
+      "price": 888.3,
+      "change": -0.79,
+      "timestamp": "2026-02-21T21:11:49.013611",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:11:48.737594",
+    "type": "MARKET",
+    "symbol": "TSLA",
+    "message": "\ud83d\udcc8 UP ALERT: TSLA moved +1.74% to $175.75",
+    "details": {
+      "price": 175.75,
+      "change": 1.74,
+      "timestamp": "2026-02-21T21:11:48.737534",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:11:48.395667",
+    "type": "MARKET",
+    "symbol": "AAPL",
+    "message": "\ud83d\udcc9 DOWN ALERT: AAPL moved -1.90% to $177.00",
+    "details": {
+      "price": 177.0,
+      "change": -1.9,
+      "timestamp": "2026-02-21T21:11:48.395596",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:06:47.712700",
+    "type": "MARKET",
+    "symbol": "GOOGL",
+    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +0.61% to $148.47",
+    "details": {
+      "price": 148.47,
+      "change": 0.61,
+      "timestamp": "2026-02-21T21:06:47.712633",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:06:47.374574",
+    "type": "MARKET",
+    "symbol": "AMZN",
+    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +1.37% to $150.12",
+    "details": {
+      "price": 150.12,
+      "change": 1.37,
+      "timestamp": "2026-02-21T21:06:47.374492",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:06:46.947248",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.88% to $405.45",
+    "details": {
+      "price": 405.45,
+      "change": -1.88,
+      "timestamp": "2026-02-21T21:06:46.947128",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:06:46.652607",
+    "type": "MARKET",
+    "symbol": "NVDA",
+    "message": "\ud83d\udcc9 DOWN ALERT: NVDA moved -1.68% to $879.59",
+    "details": {
+      "price": 879.59,
+      "change": -1.68,
+      "timestamp": "2026-02-21T21:06:46.652420",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:06:45.851943",
+    "type": "MARKET",
+    "symbol": "AAPL",
+    "message": "\ud83d\udcc9 DOWN ALERT: AAPL moved -0.79% to $173.80",
+    "details": {
+      "price": 173.8,
+      "change": -0.79,
+      "timestamp": "2026-02-21T21:06:45.851845",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:01:45.387355",
+    "type": "MARKET",
+    "symbol": "GOOGL",
+    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +1.41% to $151.69",
+    "details": {
+      "price": 151.69,
+      "change": 1.41,
+      "timestamp": "2026-02-21T21:01:45.387296",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:01:44.735051",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.26% to $408.36",
+    "details": {
+      "price": 408.36,
+      "change": -1.26,
+      "timestamp": "2026-02-21T21:01:44.735013",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:01:44.456504",
+    "type": "MARKET",
+    "symbol": "NVDA",
+    "message": "\ud83d\udcc9 DOWN ALERT: NVDA moved -0.71% to $881.81",
+    "details": {
+      "price": 881.81,
+      "change": -0.71,
+      "timestamp": "2026-02-21T21:01:44.456398",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:01:44.113444",
+    "type": "MARKET",
+    "symbol": "TSLA",
+    "message": "\ud83d\udcc9 DOWN ALERT: TSLA moved -1.43% to $177.98",
+    "details": {
+      "price": 177.98,
+      "change": -1.43,
+      "timestamp": "2026-02-21T21:01:44.113354",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T21:01:43.809528",
+    "type": "MARKET",
+    "symbol": "AAPL",
+    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +1.68% to $176.64",
+    "details": {
+      "price": 176.64,
+      "change": 1.68,
+      "timestamp": "2026-02-21T21:01:43.808526",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:56:43.344343",
+    "type": "MARKET",
+    "symbol": "GOOGL",
+    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +0.79% to $150.14",
+    "details": {
+      "price": 150.14,
+      "change": 0.79,
+      "timestamp": "2026-02-21T20:56:43.344234",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:56:42.995018",
+    "type": "MARKET",
+    "symbol": "AMZN",
+    "message": "\ud83d\udcc9 DOWN ALERT: AMZN moved -0.99% to $152.69",
+    "details": {
+      "price": 152.69,
+      "change": -0.99,
+      "timestamp": "2026-02-21T20:56:42.994941",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:56:42.707540",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc8 UP ALERT: MSFT moved +1.82% to $417.16",
+    "details": {
+      "price": 417.16,
+      "change": 1.82,
+      "timestamp": "2026-02-21T20:56:42.707449",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:56:42.049375",
+    "type": "MARKET",
+    "symbol": "TSLA",
+    "message": "\ud83d\udcc8 UP ALERT: TSLA moved +1.43% to $175.12",
+    "details": {
+      "price": 175.12,
+      "change": 1.43,
+      "timestamp": "2026-02-21T20:56:42.049258",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:56:41.615348",
+    "type": "MARKET",
+    "symbol": "AAPL",
+    "message": "\ud83d\udcc9 DOWN ALERT: AAPL moved -0.54% to $174.10",
+    "details": {
+      "price": 174.1,
+      "change": -0.54,
+      "timestamp": "2026-02-21T20:56:41.615279",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:51:41.125446",
+    "type": "MARKET",
+    "symbol": "GOOGL",
+    "message": "\ud83d\udcc9 DOWN ALERT: GOOGL moved -1.75% to $149.13",
+    "details": {
+      "price": 149.13,
+      "change": -1.75,
+      "timestamp": "2026-02-21T20:51:41.125404",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:51:40.766495",
+    "type": "MARKET",
+    "symbol": "AMZN",
+    "message": "\ud83d\udcc9 DOWN ALERT: AMZN moved -1.21% to $150.25",
+    "details": {
+      "price": 150.25,
+      "change": -1.21,
+      "timestamp": "2026-02-21T20:51:40.766139",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:51:40.396221",
+    "type": "MARKET",
+    "symbol": "MSFT",
+    "message": "\ud83d\udcc8 UP ALERT: MSFT moved +1.21% to $413.69",
+    "details": {
+      "price": 413.69,
+      "change": 1.21,
+      "timestamp": "2026-02-21T20:51:40.395287",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:51:39.844983",
+    "type": "MARKET",
+    "symbol": "TSLA",
+    "message": "\ud83d\udcc8 UP ALERT: TSLA moved +1.44% to $175.35",
+    "details": {
+      "price": 175.35,
+      "change": 1.44,
+      "timestamp": "2026-02-21T20:51:39.844905",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T20:51:39.542567",
+    "type": "MARKET",
+    "symbol": "AAPL",
+    "message": "\ud83d\udcc9 DOWN ALERT: AAPL moved -0.86% to $175.13",
+    "details": {
+      "price": 175.13,
+      "change": -0.86,
+      "timestamp": "2026-02-21T20:51:39.542532",
+      "source": "Mocked (API limit reached)"
+    }
+  },
+  {
     "timestamp": "2026-02-21T11:47:52.400175",
     "type": "MARKET",
     "symbol": "GOOGL",
@@ -800,402 +1196,6 @@
       "price": 151.51,
       "change": 0.87,
       "timestamp": "2026-02-21T10:31:55.466910",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:31:55.210084",
-    "type": "MARKET",
-    "symbol": "MSFT",
-    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.22% to $409.60",
-    "details": {
-      "price": 409.6,
-      "change": -1.22,
-      "timestamp": "2026-02-21T10:31:55.210047",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:31:54.944942",
-    "type": "MARKET",
-    "symbol": "NVDA",
-    "message": "\ud83d\udcc9 DOWN ALERT: NVDA moved -0.89% to $885.45",
-    "details": {
-      "price": 885.45,
-      "change": -0.89,
-      "timestamp": "2026-02-21T10:31:54.944905",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:31:54.347792",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +1.83% to $175.91",
-    "details": {
-      "price": 175.91,
-      "change": 1.83,
-      "timestamp": "2026-02-21T10:31:54.347712",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:26:53.767177",
-    "type": "MARKET",
-    "symbol": "GOOGL",
-    "message": "\ud83d\udcc9 DOWN ALERT: GOOGL moved -0.69% to $147.17",
-    "details": {
-      "price": 147.17,
-      "change": -0.69,
-      "timestamp": "2026-02-21T10:26:53.767112",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:26:53.470782",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +1.27% to $149.83",
-    "details": {
-      "price": 149.83,
-      "change": 1.27,
-      "timestamp": "2026-02-21T10:26:53.470741",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:26:52.494787",
-    "type": "MARKET",
-    "symbol": "TSLA",
-    "message": "\ud83d\udcc9 DOWN ALERT: TSLA moved -1.14% to $174.25",
-    "details": {
-      "price": 174.25,
-      "change": -1.14,
-      "timestamp": "2026-02-21T10:26:52.494307",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:26:52.116504",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +0.84% to $173.59",
-    "details": {
-      "price": 173.59,
-      "change": 0.84,
-      "timestamp": "2026-02-21T10:26:52.114175",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:21:48.766688",
-    "type": "MARKET",
-    "symbol": "GOOGL",
-    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +1.38% to $147.64",
-    "details": {
-      "price": 147.64,
-      "change": 1.38,
-      "timestamp": "2026-02-21T10:21:48.766594",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:21:48.290864",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc9 DOWN ALERT: AMZN moved -1.80% to $151.26",
-    "details": {
-      "price": 151.26,
-      "change": -1.8,
-      "timestamp": "2026-02-21T10:21:48.290573",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:21:47.546970",
-    "type": "MARKET",
-    "symbol": "MSFT",
-    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.59% to $410.60",
-    "details": {
-      "price": 410.6,
-      "change": -1.59,
-      "timestamp": "2026-02-21T10:21:47.546756",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:21:38.304743",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc9 DOWN ALERT: AAPL moved -1.48% to $172.95",
-    "details": {
-      "price": 172.95,
-      "change": -1.48,
-      "timestamp": "2026-02-21T10:21:38.304435",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:16:33.623665",
-    "type": "MARKET",
-    "symbol": "GOOGL",
-    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +1.69% to $148.39",
-    "details": {
-      "price": 148.39,
-      "change": 1.69,
-      "timestamp": "2026-02-21T10:16:33.623627",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:16:33.204168",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +1.32% to $148.77",
-    "details": {
-      "price": 148.77,
-      "change": 1.32,
-      "timestamp": "2026-02-21T10:16:33.204093",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:16:32.857624",
-    "type": "MARKET",
-    "symbol": "MSFT",
-    "message": "\ud83d\udcc8 UP ALERT: MSFT moved +0.92% to $414.20",
-    "details": {
-      "price": 414.2,
-      "change": 0.92,
-      "timestamp": "2026-02-21T10:16:32.857548",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:16:32.551456",
-    "type": "MARKET",
-    "symbol": "NVDA",
-    "message": "\ud83d\udcc8 UP ALERT: NVDA moved +1.98% to $880.73",
-    "details": {
-      "price": 880.73,
-      "change": 1.98,
-      "timestamp": "2026-02-21T10:16:32.551401",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:16:32.185149",
-    "type": "MARKET",
-    "symbol": "TSLA",
-    "message": "\ud83d\udcc8 UP ALERT: TSLA moved +1.57% to $172.77",
-    "details": {
-      "price": 172.77,
-      "change": 1.57,
-      "timestamp": "2026-02-21T10:16:32.185073",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:16:30.519494",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc9 DOWN ALERT: AAPL moved -0.98% to $174.44",
-    "details": {
-      "price": 174.44,
-      "change": -0.98,
-      "timestamp": "2026-02-21T10:16:30.519302",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:11:27.206469",
-    "type": "MARKET",
-    "symbol": "GOOGL",
-    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +1.73% to $147.92",
-    "details": {
-      "price": 147.92,
-      "change": 1.73,
-      "timestamp": "2026-02-21T10:11:27.206152",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:11:26.792639",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +2.56% to $210.11",
-    "details": {
-      "price": 210.11,
-      "change": 2.5627,
-      "timestamp": "2026-02-21T10:11:26.792584",
-      "source": "Alpha Vantage GLOBAL_QUOTE"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:11:26.488322",
-    "type": "MARKET",
-    "symbol": "MSFT",
-    "message": "\ud83d\udcc9 DOWN ALERT: MSFT moved -1.11% to $411.48",
-    "details": {
-      "price": 411.48,
-      "change": -1.11,
-      "timestamp": "2026-02-21T10:11:26.488296",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:11:26.222872",
-    "type": "MARKET",
-    "symbol": "NVDA",
-    "message": "\ud83d\udcc8 UP ALERT: NVDA moved +1.37% to $889.08",
-    "details": {
-      "price": 889.08,
-      "change": 1.37,
-      "timestamp": "2026-02-21T10:11:26.222842",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:11:25.563458",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +1.53% to $264.58",
-    "details": {
-      "price": 264.58,
-      "change": 1.535,
-      "timestamp": "2026-02-21T10:11:25.563129",
-      "source": "Alpha Vantage GLOBAL_QUOTE"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:06:24.277702",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +2.56% to $210.11",
-    "details": {
-      "price": 210.11,
-      "change": 2.5627,
-      "timestamp": "2026-02-21T10:06:24.277663",
-      "source": "Alpha Vantage GLOBAL_QUOTE"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:06:23.603595",
-    "type": "MARKET",
-    "symbol": "MSFT",
-    "message": "\ud83d\udcc8 UP ALERT: MSFT moved +1.62% to $416.06",
-    "details": {
-      "price": 416.06,
-      "change": 1.62,
-      "timestamp": "2026-02-21T10:06:23.603486",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:06:21.203729",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +1.53% to $264.58",
-    "details": {
-      "price": 264.58,
-      "change": 1.535,
-      "timestamp": "2026-02-21T10:06:21.203562",
-      "source": "Alpha Vantage GLOBAL_QUOTE"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:01:20.598958",
-    "type": "MARKET",
-    "symbol": "GOOGL",
-    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +0.57% to $150.75",
-    "details": {
-      "price": 150.75,
-      "change": 0.57,
-      "timestamp": "2026-02-21T10:01:20.598922",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:01:20.302764",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +1.71% to $151.32",
-    "details": {
-      "price": 151.32,
-      "change": 1.71,
-      "timestamp": "2026-02-21T10:01:20.302679",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:01:19.642874",
-    "type": "MARKET",
-    "symbol": "NVDA",
-    "message": "\ud83d\udcc8 UP ALERT: NVDA moved +1.62% to $877.26",
-    "details": {
-      "price": 877.26,
-      "change": 1.62,
-      "timestamp": "2026-02-21T10:01:19.642840",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:01:19.190929",
-    "type": "MARKET",
-    "symbol": "TSLA",
-    "message": "\ud83d\udcc9 DOWN ALERT: TSLA moved -1.40% to $171.92",
-    "details": {
-      "price": 171.92,
-      "change": -1.4,
-      "timestamp": "2026-02-21T10:01:19.190750",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T10:01:18.831976",
-    "type": "MARKET",
-    "symbol": "AAPL",
-    "message": "\ud83d\udcc8 UP ALERT: AAPL moved +1.53% to $264.58",
-    "details": {
-      "price": 264.58,
-      "change": 1.535,
-      "timestamp": "2026-02-21T10:01:18.831915",
-      "source": "Alpha Vantage GLOBAL_QUOTE"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T09:56:18.399219",
-    "type": "MARKET",
-    "symbol": "GOOGL",
-    "message": "\ud83d\udcc8 UP ALERT: GOOGL moved +0.60% to $147.10",
-    "details": {
-      "price": 147.1,
-      "change": 0.6,
-      "timestamp": "2026-02-21T09:56:18.399110",
-      "source": "Mocked (API limit reached)"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T09:56:18.040886",
-    "type": "MARKET",
-    "symbol": "AMZN",
-    "message": "\ud83d\udcc8 UP ALERT: AMZN moved +2.56% to $210.11",
-    "details": {
-      "price": 210.11,
-      "change": 2.5627,
-      "timestamp": "2026-02-21T09:56:18.040782",
-      "source": "Alpha Vantage GLOBAL_QUOTE"
-    }
-  },
-  {
-    "timestamp": "2026-02-21T09:56:17.728960",
-    "type": "MARKET",
-    "symbol": "MSFT",
-    "message": "\ud83d\udcc8 UP ALERT: MSFT moved +0.66% to $402.44",
-    "details": {
-      "price": 402.44,
-      "change": 0.66,
-      "timestamp": "2026-02-21T09:56:17.728927",
       "source": "Mocked (API limit reached)"
     }
   }
